@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://jbanuelos00:Sch00lP@ss@cluster0.jlgba.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://j.banuelos00@gmail.com:!Sc10nof1nt!@cluster0.jlgba.mongodb.net/todolistDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const itemsSchema = new mongoose.Schema ({
   name: {
